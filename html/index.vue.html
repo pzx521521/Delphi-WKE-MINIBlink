@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div id="appTitle">
+			<div class="topTitle">
+				<img class="chkImg" src="img/chk_12.gif" />
+				<div class="checkText">{{ checkText }}
+					<div class="checkboxtext">
+					      <input class="input_agreement_protocol" type="checkbox" />
+					      <span>{{ inputcheckText }}</span>
+					      <input class="input_agreement_protocol" type="checkbox" />
+					      <span>{{ inputcheckText2 }}</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div id="progressbar" class="progressbar">
+			
+		</div>
+		<div id="appcontent">	
+			<div class="item_content">
+				<ul>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/youku.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/jd.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/taobao.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/fenghuan.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/souhu.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/wangyi.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/renren.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/360.png" /></div></li>
+				  <li><div class="item"><img src="http://demo.lanrenzhijia.com/2014/pic0929/images/360game.png" /></div></li>
+				</ul>
+			</div>	
+  		</div>
+	</body>
+	<script src="progressbar/prefixfree.min.js"></script>
+	<script src="progressbar/progressbar.js"></script>  
+	<script src="jquery-2.1.1.min.js"></script>		
+	<script src="vue.js"></script>
+	<script>
+		var appTitle = new Vue({
+		  el: '#appTitle',
+		  data: {
+		    checkText: '全面检查, 保障安全',
+		    inputcheckText: '招标工程推荐检查项',
+		    inputcheckText2: '投标工程推荐检查项',
+		    message: 'Hello Vue.js!'
+		  }
+		})	
+		var appcontent = new Vue({
+		  el: '#appcontent',
+		  data: {
+
+		  }
+		})			
+	</script>
+</html>
